@@ -1,8 +1,5 @@
-
-
-
 server:server.cpp
-	g++ -o $@ $^ -g
+	g++  -o $@ $^ -g
 
 client:client.cpp
 	g++ -o $@ $^ -g

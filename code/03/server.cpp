@@ -12,7 +12,7 @@ int main() {
     serv_addr.sin_addr.s_addr = inet_addr("127.0.0.1");
     serv_addr.sin_port = htons(8888);
 
-    bind(sockfd, (sockaddr*)&serv_addr, sizeof(serv_addr));
+    ::bind(sockfd, (sockaddr*)&serv_addr, sizeof(serv_addr));
 
     listen(sockfd, SOMAXCONN);
     

@@ -13,7 +13,7 @@ int main() {
     serv_addr.sin_port = htons(8888);
 
     bind(sockfd, (sockaddr*)&serv_addr, sizeof(serv_addr));
-
+    bind(sockaddr_in)
     listen(sockfd, SOMAXCONN);
     
     struct sockaddr_in clnt_addr;
